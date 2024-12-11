@@ -57,16 +57,26 @@
 
 
 
-                <com.google.android.material.textfield.TextInputLayout
+                <LinearLayout
                     android:id="@+id/emailSUInputLayout"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
                     android:fontFamily="@font/montserrat"
                     android:textColorHint="@color/dark_blue"
                     app:errorEnabled="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Электронная почта"
+                        android:textSize="15dp" />
 
                     <EditText
                         android:id="@+id/emailSU"
@@ -77,19 +87,29 @@
                         android:inputType="textEmailAddress"
                         android:textColorHint="@color/dark_blue"
                         android:textSize="20sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
+                <LinearLayout
                     android:id="@+id/passwordSUInputLayout"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
                     android:fontFamily="@font/montserrat"
                     android:textColorHint="@color/dark_blue"
                     app:errorEnabled="true"
                     app:passwordToggleEnabled="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Пароль"
+                        android:textSize="15dp" />
 
                     <EditText
                         android:id="@+id/passwordSU"
@@ -101,7 +121,7 @@
                         android:inputType="numberDecimal"
                         android:textColorHint="@color/dark_blue"
                         android:textSize="20sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

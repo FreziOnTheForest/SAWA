@@ -5,7 +5,7 @@
     android:id="@+id/create_code"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateCodeActivity">
+    tools:context=".AuthCodeActivity">
 
 
     <ImageView
@@ -217,6 +217,24 @@
                     android:textColor="@color/dark_blue"
                     android:textSize="70px" />
             </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/dark_blue"
+            app:cardCornerRadius="11dp">
+
+            <Button
+                android:id="@+id/singUpBut"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:background="@color/dark_blue"
+                android:text="Выйти"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 </FrameLayout>
