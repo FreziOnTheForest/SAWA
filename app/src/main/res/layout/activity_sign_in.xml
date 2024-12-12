@@ -76,7 +76,7 @@
                         android:layout_marginStart="3dp"
                         android:fontFamily="@font/montserrat_bold"
                         android:text="Электронная почта"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/emailSU"
@@ -109,7 +109,7 @@
                         android:layout_marginStart="3dp"
                         android:fontFamily="@font/montserrat_bold"
                         android:text="Пароль"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/passwordSU"
