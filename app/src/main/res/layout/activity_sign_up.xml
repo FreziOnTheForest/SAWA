@@ -12,6 +12,7 @@
         android:background="@drawable/street_facade"
         tools:context=".SignUpActivity">
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -54,70 +55,80 @@
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Имя пользователя"
+                    android:textSize="15sp" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/nameSUInputLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/montserrat"
-                    android:textColorHint="@color/dark_blue"
+                    android:layout_height="wrap_content"
                     app:errorEnabled="true">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/nameSU"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/montserrat"
+                        android:layout_height="wrap_content"
                         android:hint="Имя пользователя"
+                        android:fontFamily="@font/montserrat"
                         android:textColorHint="@color/dark_blue"
                         android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Электронная почта"
+                    android:textSize="15sp" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/emailSUInputLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/montserrat"
-                    android:textColorHint="@color/dark_blue"
+                    android:layout_height="wrap_content"
                     app:errorEnabled="true">
 
-                    <EditText
+
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/emailSU"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat"
                         android:hint="Электронная почта"
                         android:inputType="textEmailAddress"
+                        android:fontFamily="@font/montserrat"
                         android:textColorHint="@color/dark_blue"
                         android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Пароль"
+                    android:textSize="15sp" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/passwordSUInputLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/montserrat"
-                    android:textColorHint="@color/dark_blue"
+                    android:layout_height="wrap_content"
                     app:errorEnabled="true"
                     app:passwordToggleEnabled="true">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/passwordSU"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:digits="0123456789.,-"
-                        android:fontFamily="@font/montserrat"
                         android:hint="Пароль"
-                        android:inputType="numberDecimal"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/montserrat"
                         android:textColorHint="@color/dark_blue"
                         android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -132,14 +143,14 @@
             app:cardCornerRadius="11dp">
 
             <Button
-                android:id="@+id/singUpBut"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:fontFamily="@font/montserrat_bold"
-                android:background="@color/choco_red"
-                android:text="Регистрация"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:id="@+id/signUpBut"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@color/choco_red"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Регистрация"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -148,6 +159,7 @@
             app:cardBackgroundColor="@color/dark_blue"
             android:layout_marginTop="20dp"
             app:cardCornerRadius="11dp">
+
             <Button
                 android:id="@+id/signInBut"
                 android:layout_width="300dp"
